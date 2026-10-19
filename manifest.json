@@ -1,9 +1,9 @@
 {
-	"id": "decision-wheel",
-	"name": "Decision Wheel",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "A spinning wheel to help make decisions.",
-	"author": "Gowanii",
-	"isDesktopOnly": false
+  "id": "decision-wheel",
+  "name": "Decision Wheel",
+  "version": "1.1.0",
+  "minAppVersion": "0.15.0",
+  "description": "A spinning wheel to help make decisions.",
+  "author": "Gowanii",
+  "isDesktopOnly": false
 }
