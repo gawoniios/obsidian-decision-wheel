@@ -78,3 +78,60 @@
 	padding: 8px !important;
 	border-radius: 5px;
 }
+
+/* Decision Wheel: mobile modal layout */
+
+@media (max-width: 600px) {
+    .modal:has(.wheel-vault-mobile-fix) .modal-content {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .wheel-vault-mobile-fix,
+    .wheel-vault-mobile-fix * {
+        box-sizing: border-box;
+    }
+
+    .wheel-vault-mobile-fix {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .wheel-vault-mobile-fix input,
+    .wheel-vault-mobile-fix select {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .wheel-vault-mobile-fix button {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    .wheel-vault-mobile-fix > div {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+/* Slice management, result dialog and spin tally */
+.dw-toolbar, .dw-add-row, .dw-result-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.dw-toolbar > button, .dw-result-actions > button { flex:1 1 120px; }
+.dw-add-row > input { flex:1 1 130px; min-width:0; }
+.dw-add-row > button { flex:0 0 auto; }
+.wheel-item-row { gap:6px; min-width:0; }
+.wheel-item-text { flex:1; min-width:0; overflow-wrap:anywhere; }
+.dw-slice-dot { width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+.dw-slice-controls { display:flex; align-items:center; gap:4px; flex-wrap:wrap; justify-content:flex-end; }
+.dw-slice-controls button { padding:3px 7px; min-height:28px; }
+.dw-slice-hidden .wheel-item-text { opacity:.55; text-decoration:line-through; }
+.dw-edit-input { flex:1; min-width:0; }
+.dw-tally-panel { margin-top:12px; border:1px solid var(--background-modifier-border); border-radius:6px; padding:10px; }
+.dw-tally-panel summary { cursor:pointer; font-weight:600; }
+.dw-tally-row { display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px solid var(--background-modifier-border); }
+.dw-tally-row span { min-width:0; overflow-wrap:anywhere; }
+.dw-tally-panel button { margin-top:10px; }
+.dw-result-name, .dw-result-count { text-align:center; overflow-wrap:anywhere; }
+.dw-result-actions { margin-top:18px; }
